@@ -1,11 +1,17 @@
-const fs = require("fs");
+const add = require("./utils");
 
-fs.writeFileSync("notes.txt", "This file was created by Node.js.");
+const sum = add(2, 2);
 
-// Challnege: Aapend a message to notes.txt
+console.log(sum);
 
-// 1. Use appendFileSync to append to the file
+// const fs = require("fs");
 
-fs.appendFileSync("notes.txt", " This text was added to notes.txt by Node.js.");
+// fs.writeFileSync("notes.txt", "This file was created by Node.js.");
 
-// 2. Run the script
+// // Challnege: Aapend a message to notes.txt
+
+// // 1. Use appendFileSync to append to the file
+
+// fs.appendFileSync("notes.txt", " This text was added to notes.txt by Node.js.");
+
+// // 2. Run the script
