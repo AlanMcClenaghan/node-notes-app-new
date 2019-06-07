@@ -5,6 +5,18 @@ const addNote = (title, body) => {
   const notes = loadNotes();
   const duplicateNote = notes.find(note => note.title === title);
 
+  // Debugging Node.js
+  // console.log(duplicateNote);
+  // console.log(title);
+
+  // Use debugger with inspect in the terminal
+  // Use chrome://inspect in the browser
+  // Configure:
+  // localhost:9229
+  // 127.0.0.1:9229
+  // restart
+  // debugger;
+
   if (!duplicateNote) {
     notes.push({
       title,
